@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <!-- sweet alert css  -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.17/dist/sweetalert2.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <div class="form-body">
+        <div class="row">
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <h3>BÀI TẬP VỀ NHÀ</h3>
+                        <div class="showArr">
+                           <p>Mảng đã thêm là:</p>
+                          </div>
+                        <div class="requires-validation" novalidate>
+
+                            <div class="col-md-12 formInput">
+                                <input class="form-control input1" type="text" name="name" id="number" placeholder="Nhập số vào mảng" required>
+                                <button class="btn btn-info btn1" onclick="ThemSo()">Thêm</button>
+                            </div>
+
+                            <div class="col-md-12 row mt-3">
+                                <div class="col-md-6 inputAdd  inputAdd1">
+                                    <input class="form-control" type="text" name="viTri1" id="viTri1" placeholder="Nhập vị trí thứ nhất" required>
+                                    <div class="valid-feedback">Đã nhập</div>
+                                    <div class="invalid-feedback">Bạn chưa nhập</div>
+                                </div>
+                            
+                                <div class="col-md-6 inputAdd inputAdd2">
+                                    <input class="form-control" type="text" name="viTri2" id="viTri2" placeholder="Nhập vị trí thứ hai" required>
+                                    <div class="valid-feedback">Đã nhập</div>
+                                    <div class="invalid-feedback">Bạn chưa nhập</div>
+                                </div>
+                            </div>
+                            
+                            <div class="input-group select1">
+                                <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                                  <option selected>Choose...</option>
+                                  <option id="op1" value="1">Tổng các số dương trong mảng.</option>
+                                  <option id="op2" value="2">Đếm có bao nhiêu số dương trong mảng.</option>
+                                  <option id="op3" value="3">Tìm số nhỏ nhất trong mảng.</option>
+                                  <option id="op4" value="4">Tìm số dương nhỏ nhất trong mảng.</option>
+                                  <option id="op5" value="5">Tìm số chẵn cuối cùng trong mảng</option>
+                                  <option id="op6" value="6">Đổi chỗ 2 giá trị trong mảng theo vị trí</option>
+                                  <option id="op7" value="7">Sắp xếp mảng theo thứ tự tăng dần.</option>
+                                  <option id="op8" value="8">Tìm số nguyên tố đầu tiên trong mảng</option>
+                                  <option id="op9" value="9">Nhập thêm 1 mảng số thực, tìm xem trong mảng có bao nhiêu số nguyên
+                                </option>
+                                  <option id="op10" value="10">So sánh số lượng số dương và số lượng số âm xem số nào nhiều hơn</option>
+                                </select>
+                              
+                        </div>
+
+                            <div class="form-button mt-3" id="result"></div>
+                            <button class="btn btn-primary btn2"onclick="DuyetMang()">Kết Quả</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="./index.js"></script>
+    <!-- sweet alert js  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.17/dist/sweetalert2.all.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
